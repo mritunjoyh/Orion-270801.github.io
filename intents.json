@@ -1,0 +1,123 @@
+{"intents": [
+  {"tag" : "greetings",
+  "patterns":["hello","hi","is anyone here?","good morning","good day","good afternoon","I am here for check-up","I need treatment"],
+  "responses":["Welcome to Telemedicine please type your name","Hi there please type your name","hello, please type your name", "Please type your name for check-up", "Please type your name to register yourself for treatment","Good morning, please type your name", "Good day, please type your name", "Good afternoon,please type your name"],
+  "context" : [""]
+  },
+  {"tag":"going",
+  "patterns":["thank you","thanks I want to see a doctor","I have uploaded and filled all details","is there anything left","please arrange a meeting with a doctor", "I want to contact the doctor","I have done the meeting"],
+  "responses":["Thank you for collaborating please wait till we connect you with a doctor", "wait till the doctor connects", "You have done the meeting and collect the prescription from the kisok-admin", "Thank you for filling the required. Please wait till the doctor verifies and connects"],
+  "context" : [""]
+  },
+  {"tag":"name",
+  "patterns":["my name is", "I am "],
+  "responses": ["please provide your age"],
+  "context":[""]
+  },
+  {"tag":"age",
+  "patterns":["I am years old", "years"],
+  "responses":["gender"],
+  "context":[""]
+  },
+  {"tag":"gender",
+  "patterns":["male","female"],
+  "responses":["What is your height in cm"],
+  "context":[""]
+  },
+  {"tag":"height",
+  "patterns":["I am cm tall","I am of "],
+  "responses":["Please provide your weight"],
+  "context":[""]
+  },
+  {"tag":"weight",
+  "patterns":["My weight is kg", " kg"],
+  "responses":["are you an old/new patient"],
+  "context":[""]
+  },
+  {"tag":"old",
+  "patterns":["I am an old patient"],
+  "responses":["According to our previous records, you had diabetes. Are you continuing the medicines now?"],
+  "context":[""]
+  },
+  {"tag":"medicine",
+  "patterns":["Yes I am continuing","no I have stopped"],
+  "responses":["Good that you're continuing and have you done any diagonistic tests","have you done any diagonistic test"],
+  "context":[""]
+  },
+  {"tag":"test not done",
+  "patterns":["no I have not done any test","not done yet","could not do"],
+  "responses":["Do you feel thirsty often"],
+  "context":[""]
+  },
+  {"tag":"thirsty",
+  "patterns":["Yes I feel thirsty very often","No I don't feel thirsty often"],
+  "responses":["Do you urinate frequently"],
+  "context":[""]
+  },
+  {"tag":"urination",
+  "patterns":["Yes I have to urinate very often","No my urination frequency normal"],
+  "responses":["Do you get dizzy suddenly"],
+  "context":[""]
+  },
+  {"tag":"dizzy",
+  "patterns":["Yes I get dizzy","No I don't get dizzy"],
+  "responses":["Do you sweat much"],
+  "context":[""]
+  },
+  {"tag":"sweat",
+  "patterns":["Yes I sweat much","sweating is normal"],
+  "responses":["Do you have body ache"],
+  "context":[""]
+  },
+  {"tag":"body ache",
+  "patterns":["yes I have joint pains, back pains","No body ache"],
+  "responses":["Any sign of increased hunger"],
+  "context":[""]
+  },
+  {"tag":"hunger",
+  "patterns":["Yes my hunger has been increased","Hunger is normal"],
+  "responses":["Thank you for collaborating.Please wait till we connect you our doctor"],
+  "context":[""]
+  },
+  {"tag":"test done",
+  "patterns":["Yes I have done the mentioned tests"],
+  "responses":["Kindly upload the scanned report and fill the following data: PP(blood sugar level)"],
+  "context":[""]
+  },
+  {"tag":"PP",
+  "patterns":["Yes blood sugar level is", "No I have not done the PP test"],
+  "responses":["Random level:"],
+  "context":[""]
+  },
+  {"tag":"random",
+  "patterns":["My random blood sugar level is "," Random not done"],
+  "responses":["fasting"],
+  "context":[""]
+  },
+  {"tag":"fasing",
+  "patterns":["My fasting blood sugar level is ","fasting not done"],
+  "responses":["Serum uric acid"],
+  "context":[""]
+  },  
+ {"tag":"Serum uric acid",
+  "patterns":["My serum uric acid level is ","serum uric acid not done"],
+  "responses":["HbA1C"],
+  "context":[""]
+  },  
+  {"tag":"HbA1C",
+  "patterns":["My HbA1C level is ","HbA1C not done"],
+  "responses":["Urine sugar"],
+  "context":[""]
+  },  
+  {"tag":"Urine sugar",
+  "patterns":["My urine sugar level is ","urine sugar test not done"],
+  "responses":["Do you feel thirsty often"],
+  "context":[""]
+  },
+  {"tag":"new",
+  "patterns":["I am a new patient"],
+  "responses":["Please tell your problems to the doctor and wait till we connect the call"],
+  "context":[""]
+  }
+]
+}
